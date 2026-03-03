@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunishka Agarwal | ECE Engineer & Developer</title>
+  <meta name="description" content="Portfolio of Sunishka Agarwal — B.Tech ECE 2nd Year at JIIT, aspiring Software Engineer."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">SA<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mob-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#about"     class="mob-link">About</a></li>
+      <li><a href="#skills"    class="mob-link">Skills</a></li>
+      <li><a href="#projects"  class="mob-link">Projects</a></li>
+      <li><a href="#education" class="mob-link">Education</a></li>
+      <li><a href="#contact"   class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+
+    <!-- Left: Text -->
+    <div class="hero-left">
+      <div class="h-badge">
+        <span class="badge-pulse"></span>
+        Available for Internships
+      </div>
+
+      <h1 class="h-name">
+        <span class="h-greeting">Hello, I'm</span>
+        Sunishka<br/>
+        <span class="h-surname">Agarwal</span>
+      </h1>
+
+      <div class="h-role">
+        <span class="slash">//</span>
+        <span id="typedRole"></span><span class="cursor-blink">|</span>
+      </div>
+
+      <p class="h-desc">
+        B.Tech 2nd Year — Electronics &amp; Communication Engineering at JIIT.<br/>
+        Building software that bridges hardware intelligence and real-world impact.
+      </p>
+
+      <div class="h-chips">
+        <span>C / C++</span>
+        <span>Python</span>
+        <span>MATLAB</span>
+        <span>AI & ML</span>
+        <span>PHP</span>
+        <span>Laravel</span>
+      </div>
+
+      <div class="h-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact"  class="btn-outline">Let's Connect</a>
+      </div>
+    </div>
+
+    <!-- Right: Photo -->
+    <div class="hero-right">
+      <div class="photo-frame">
+        <div class="photo-ring r1"></div>
+        <div class="photo-ring r2"></div>
+        <div class="photo-inner">
+          <!--
+            ============================================
+            YOUR PHOTO — replace src with your filename
+            Make sure the image file is in the same folder
+            ============================================
+          -->
+          <img src="piddi.jpeg" alt="Sunishka Agarwal" class="profile-photo"/>
+          <!-- Fallback placeholder shown only if image fails to load -->
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="30" r="16" fill="rgba(139,92,246,0.4)"/>
+                <path d="M8 72c0-17.673 14.327-32 32-32s32 14.327 32 32" fill="rgba(139,92,246,0.25)"/>
+              </svg>
+            </div>
+            <span>Add Your Photo</span>
+            <code>src="piddi.jpeg"</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="sec-label reveal"><span>01</span> About Me</div>
+
+      <div class="about-grid">
+
+        <!-- Left: bio + stats -->
+        <div class="about-left">
+          <h2 class="sec-title reveal">
+            Crafting Code<br/><span class="grad-text">from Circuits</span>
+          </h2>
+
+          <p class="reveal">
+            I'm <strong>Sunishka Agarwal</strong> — a passionate learner with a strong interest in
+            programming, AI, and problem-solving. I enjoy working on technical projects in C++ and
+            Python while continuously strengthening my analytical and logical skills. I believe in
+            combining technical knowledge with ethical values and practical thinking to create
+            meaningful solutions.
+          </p>
+
+          <p class="reveal">I am particularly interested in:</p>
+          <ul class="about-interests reveal">
+            <li>Software development and object-oriented programming</li>
+            <li>Artificial Intelligence and machine learning concepts</li>
+            <li>Mathematical problem-solving and algorithm design</li>
+          </ul>
+
+          <p class="reveal">
+            My goal is to grow as a competent professional while contributing positively to society
+            through knowledge, innovation, and integrity. Currently seeking
+            <mark>SDE internship opportunities</mark> to make that vision real.
+          </p>
+
+          <div class="about-stats">
+            <div class="astat reveal"><span class="astat-n">2nd</span><span class="astat-l">Year B.Tech</span></div>
+            <div class="astat reveal"><span class="astat-n">ECE</span><span class="astat-l">Branch</span></div>
+            <div class="astat reveal"><span class="astat-n">5+</span><span class="astat-l">Projects</span></div>
+            <div class="astat reveal"><span class="astat-n">∞</span><span class="astat-l">Curiosity</span></div>
+          </div>
+        </div>
+
+        <!-- Right: animated terminal -->
+        <div class="about-terminal reveal">
+          <div class="term-bar">
+            <div class="term-dots">
+              <span class="td r"></span>
+              <span class="td y"></span>
+              <span class="td g"></span>
+            </div>
+            <span class="term-title">sunishka@portfolio:~</span>
+          </div>
+          <div class="term-body" id="aboutTerminal">
+            <div class="tl"><span class="tp">$ </span><span id="ac1"></span></div>
+            <div class="to"    id="ao1"></div>
+            <div class="to"    id="ao2"></div>
+            <div class="to hi" id="ao3"></div>
+            <div class="to"    id="ao4"></div>
+            <div class="to hi" id="ao5"></div>
+            <div class="to"    id="ao6"></div>
+            <div class="tl"    id="aline2" style="display:none">
+              <span class="tp">$ </span><span id="ac2"></span>
+            </div>
+            <div class="to hi" id="ao7"></div>
+            <div class="tl"    id="aline3" style="display:none">
+              <span class="tp">$ </span><span class="tblink">▋</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <div class="sec-label reveal"><span>02</span> Skills</div>
+      <h2 class="sec-title reveal">Technical <span class="grad-text">Expertise</span></h2>
+      <p class="sec-sub reveal">Two worlds, one engineer — software craft meets electronics depth.</p>
+
+      <div class="skills-split">
+
+        <!-- Software column -->
+        <div class="sk-col reveal">
+          <div class="sk-col-head">
+            <div class="sk-col-icon">💻</div>
+            <div>
+              <div class="sk-col-title">Software &amp; Programming</div>
+              <div class="sk-col-sub">Languages, frameworks &amp; dev tools</div>
+            </div>
+          </div>
+          <div class="sk-rows">
+            <div class="skr">
+              <div class="skr-top"><span>C / C++</span><span>85%</span></div>
+              <div class="skr-track"><div class="skr-fill" style="--w:85%"></div></div>
+              <div class="skr-tags"><span>Core Lang</span><span>DSA</span><span>OOP</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>Python</span><span>75%</span></div>
+              <div class="skr-track"><div class="skr-fill" style="--w:75%"></div></div>
+              <div class="skr-tags"><span>Scripting</span><span>Automation</span><span>ML Basics</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>MATLAB</span><span>70%</span></div>
+              <div class="skr-track"><div class="skr-fill" style="--w:70%"></div></div>
+              <div class="skr-tags"><span>Signal Processing</span><span>Image Processing</span><span>Simulation</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>NS-2</span><span>65%</span></div>
+              <div class="skr-track"><div class="skr-fill" style="--w:65%"></div></div>
+              <div class="skr-tags"><span>Network Simulation</span><span>TCL Scripting</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>HTML / CSS</span><span>88%</span></div>
+              <div class="skr-track"><div class="skr-fill" style="--w:88%"></div></div>
+              <div class="skr-tags"><span>Responsive</span><span>Flexbox</span><span>Grid</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>Linux</span><span>68%</span></div>
+              <div class="skr-track"><div class="skr-fill" style="--w:68%"></div></div>
+              <div class="skr-tags"><span>Shell</span><span>Bash</span><span>Commands</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sk-divider">
+          <div class="div-l"></div>
+          <div class="div-ico">⚡</div>
+          <div class="div-l"></div>
+        </div>
+
+        <!-- Electronics column -->
+        <div class="sk-col reveal">
+          <div class="sk-col-head">
+            <div class="sk-col-icon">🔌</div>
+            <div>
+              <div class="sk-col-title">Electronics &amp; ECE</div>
+              <div class="sk-col-sub">Hardware, circuits &amp; communication systems</div>
+            </div>
+          </div>
+          <div class="sk-rows">
+            <div class="skr">
+              <div class="skr-top"><span>Proteus (Circuit Simulation)</span><span>78%</span></div>
+              <div class="skr-track"><div class="skr-fill eco" style="--w:78%"></div></div>
+              <div class="skr-tags eco"><span>Schematic</span><span>PCB Layout</span><span>Simulation</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>Digital Electronics</span><span>80%</span></div>
+              <div class="skr-track"><div class="skr-fill eco" style="--w:80%"></div></div>
+              <div class="skr-tags eco"><span>Logic Gates</span><span>Flip-Flops</span><span>Mux</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>Signals &amp; Systems</span><span>70%</span></div>
+              <div class="skr-track"><div class="skr-fill eco" style="--w:70%"></div></div>
+              <div class="skr-tags eco"><span>Fourier</span><span>Laplace</span><span>Filters</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>Circuit Designing</span><span>70%</span></div>
+              <div class="skr-track"><div class="skr-fill eco" style="--w:70%"></div></div>
+              <div class="skr-tags eco"><span>Analog</span><span>Digital</span><span>Mixed</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>Analog Circuits</span><span>65%</span></div>
+              <div class="skr-track"><div class="skr-fill eco" style="--w:65%"></div></div>
+              <div class="skr-tags eco"><span>Op-Amp</span><span>Transistors</span><span>RC Circuits</span></div>
+            </div>
+            <div class="skr">
+              <div class="skr-top"><span>Network Theory</span><span>68%</span></div>
+              <div class="skr-track"><div class="skr-fill eco" style="--w:68%"></div></div>
+              <div class="skr-tags eco"><span>Mesh Analysis</span><span>Theorems</span><span>Two-Port</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="sec-label reveal"><span>03</span> Projects</div>
+      <h2 class="sec-title reveal">Things I've <span class="grad-text">Built</span></h2>
+      <p class="sec-sub reveal">A selection of real work — update with your actual projects!</p>
+
+      <div class="proj-grid">
+
+        <div class="proj-card featured reveal">
+          <div class="proj-glow"></div>
+          <div class="proj-top">
+            <span class="proj-emoji">🍽️</span>
+            <div class="proj-lnks">
+              <a href="#" aria-label="GitHub">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.26 2.88.13 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://kyabanaoo.com/" aria-label="Live Demo">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="proj-badge">⭐ Featured</span>
+          <h3 class="proj-title">Kyabanaoo - Food Discovery Platform</h3>
+          <p class="proj-desc">A food discovery platform that helps users explore the best dish options for a happier and healthier lifestyle. Browse healthy, Indian, Continental, and global cuisine ideas in one place—without running to expensive restaurants. Includes curated recipes so you can cook your favorite dishes at home.</p>
+          <div class="proj-tags">
+            <span>Food</span><span>Recipes</span><span>Indian Cuisine</span><span>Healthy Lifestyle</span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-emoji">🍽️</span>
+            <div class="proj-lnks">
+              <a href="#" aria-label="GitHub">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.26 2.88.13 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Food Management System</h3>
+          <p class="proj-desc">A web-based application built to efficiently manage food orders, inventory, and customer records. Streamlines menu management, order tracking, and billing through a clean, user-friendly interface for smooth day-to-day operations.</p>
+          <div class="proj-tags"><span>Inventory</span><span>Orders</span><span>Food Tech</span></div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-emoji">🚖</span>
+            <div class="proj-lnks">
+              <a href="#" aria-label="GitHub">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.26 2.88.13 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">FastCabs - Cab Booking System</h3>
+          <p class="proj-desc">A ride-booking platform designed to automate cab reservations and trip management. Enables users to book rides, calculate fares, and track trips, while managing driver allocation, customer records, and booking history through a structured database system.</p>
+          <div class="proj-tags"><span>Booking System</span><span>Transportation</span><span>Automation</span></div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-emoji">💍</span>
+            <div class="proj-lnks">
+              <a href="#" aria-label="GitHub">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.26 2.88.13 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Meet Ur One - Matrimonial Site</h3>
+          <p class="proj-desc">A web-based matchmaking platform that connects individuals seeking compatible life partners. Users can create profiles, upload personal details, and find matches based on preferences like age, profession, and interests, with secure authentication and structured data management.</p>
+          <div class="proj-tags"><span>Matrimonial</span><span>User Profiles</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section alt" id="education">
+    <div class="wrap">
+      <div class="sec-label reveal"><span>04</span> Education</div>
+      <h2 class="sec-title reveal">Academic <span class="grad-text">Journey</span></h2>
+
+      <div class="timeline">
+
+        <div class="tl-row reveal">
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <span class="tl-yr">2024 — Present</span>
+            <h3 class="tl-h">B.Tech — Electronics &amp; Communication Engineering</h3>
+            <p class="tl-place">🏫 Jaypee Institute of Information Technology &nbsp;·&nbsp; 2nd Year</p>
+            <div class="tl-chips"><span>ECE</span><span>B.Tech</span><span>Ongoing</span></div>
+          </div>
+        </div>
+
+        <div class="tl-row reveal">
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <span class="tl-yr">2023-2024</span>
+            <h3 class="tl-h">Class XII — PCM + Computer Science</h3>
+            <p class="tl-place">🏫 Ryan International School, Noida &nbsp;·&nbsp; CBSE Board</p>
+            <div class="tl-chips"><span>12th Grade</span><span>PCM + CS</span><span>CBSE</span></div>
+          </div>
+        </div>
+
+        <div class="tl-row reveal">
+          <div class="tl-side">
+            <div class="tl-dot"></div>
+          </div>
+          <div class="tl-card">
+            <span class="tl-yr">Online Learning</span>
+            <h3 class="tl-h">Certifications &amp; Courses</h3>
+            <p class="tl-place">🎓 Deloitte</p>
+            <p class="tl-p">Data Analytics Job Simulation</p>
+            <!-- <div class="tl-chips"><span>✏️ Add Your Certs</span></div> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="sec-label reveal"><span>05</span> Contact</div>
+      <h2 class="sec-title reveal">Let's <span class="grad-text">Connect</span></h2>
+      <p class="sec-sub reveal">Open to internships, collaborations and projects. Reach out anytime!</p>
+
+      <div class="contact-cards reveal">
+
+        <a href="mailto:sunishka2107@gmail.com" class="cc">
+          <div class="cc-top"><span class="cc-ico">✉️</span><span class="cc-arr">↗</span></div>
+          <div class="cc-name">Email</div>
+          <div class="cc-val">sunishka2107@gmail.com</div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sunishka-agarwal-3635a731b/" class="cc" target="_blank" rel="noopener">
+          <div class="cc-top">
+            <span class="cc-ico">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452H17.21v-5.569c0-1.327-.024-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.984V9h3.1v1.561h.046c.431-.816 1.484-1.676 3.054-1.676 3.265 0 3.868 2.149 3.868 4.943v6.624zM5.337 7.433a1.8 1.8 0 110-3.601 1.8 1.8 0 010 3.601zM6.959 20.452H3.714V9h3.245v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </span>
+            <span class="cc-arr">↗</span>
+          </div>
+          <div class="cc-name">LinkedIn</div>
+          <div class="cc-val">Sunishka Agarwal</div>
+        </a>
+
+        <a href="https://github.com/sunishka2107-blip" class="cc" target="_blank" rel="noopener">
+          <div class="cc-top">
+            <span class="cc-ico">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.57v-2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.26 2.88.13 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </span>
+            <span class="cc-arr">↗</span>
+          </div>
+          <div class="cc-name">GitHub</div>
+          <div class="cc-val">sunishka2107-blip</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="foot-logo">SA<span class="dot">.</span></div>
+      <p>Designed &amp; Built by <span class="grad-text">Sunishka Agarwal</span> &nbsp;·&nbsp; B.Tech ECE 2nd Year · JIIT</p>
+      <p class="foot-copy">© 2026 · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
